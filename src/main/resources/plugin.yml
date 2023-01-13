@@ -1,0 +1,7 @@
+name: FairFly
+version: '${project.version}'
+main: me.cactus.fairfly.Main
+api-version: 1.16
+author: nCactus
+commands:
+  fly:
