@@ -27,9 +27,9 @@ public class FlyCommand implements CommandExecutor {
             return true;
         }
 
-        // Проверка на надетые элитры
+        // Проверка на надетые элитры и отсутствие права на обход
         ItemStack chestplate = player.getInventory().getChestplate();
-        if (chestplate == null || chestplate.getType() != Material.ELYTRA) {
+        if ((chestplate == null || chestplate.getType() != Material.ELYTRA) && !player.hasPermission("fairfly.bypass")) {
             player.sendMessage(noElytra);
             return true;
         }

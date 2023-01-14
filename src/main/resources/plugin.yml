@@ -1,7 +1,12 @@
 name: FairFly
-version: '${project.version}'
+version: '1.1'
 main: me.cactus.fairfly.Main
 api-version: 1.16
 author: nCactus
 commands:
   fly:
+permissions:
+  fairfly.use:
+    description: доступ к команде /fly
+  fairfly.bypass:
+    description: игнорирование требования носить элитры для полета
